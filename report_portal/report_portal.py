@@ -1,6 +1,6 @@
 """reportportal.io plugin to hook_plug."""
 from time import time
-from traceback import print_exc
+from traceback import print_exc, format_tb
 from hook_plug import tag_behavior
 from reportportal_client import ReportPortalServiceAsync
 
@@ -119,6 +119,12 @@ class ReportPortalPlugin:
 
     @tag_behavior
     def after_step(self, context, step):
+        if step.status.name == 'failed':
+            self._rp.log(
+                time=self.timestamp(),
+                message=''.join(format_tb(step.exc_traceback)),
+                level='ERROR',
+            )
         self._rp.finish_test_item(
             end_time=self.timestamp(),
             status=step.status.name,
