@@ -12,10 +12,10 @@ setup(
     keywords=['testing', 'reporting', 'reportportal', 'hook_plug', 'behave'],
     install_requires=[
         'reportportal-client',
-        'hook_plug @ https://github.com/dunossauro/hook_plug/tarball/master#egg=hook_plug-0.0.1'
+        'hook_plug @ https://github.com/dunossauro/hook_plug/tarball/master#egg=hook_plug'
     ],
     dependency_links=[
-        'https://github.com/dunossauro/hook_plug/tarball/master#egg=hook_plug-0.0.1'
+        'https://github.com/dunossauro/hook_plug/tarball/master#egg=hook_plug'
     ],
     zip_safe=False,
 )
