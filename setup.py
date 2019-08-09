@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='report-portal-hook-plugin',
-    version='0.0.2',
+    version='0.0.3',
     description='behave report portal hook plugin',
     url='https://github.com/dunossauro/report-portal-hook-plugin',
     author='Eduardo Mendes',
