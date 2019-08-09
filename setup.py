@@ -10,9 +10,6 @@ setup(
     license='MIT',
     packages=['report_portal'],
     keywords=['testing', 'reporting', 'reportportal', 'hook_plug', 'behave'],
-    install_requires=['reportportal-client'],
-    dependency_links=[
-        'https://github.com/dunossauro/hook_plug/master#egg=hook_plug'
-    ],
+    install_requires=['reportportal-client', 'hook-plug'],
     zip_safe=False,
 )
