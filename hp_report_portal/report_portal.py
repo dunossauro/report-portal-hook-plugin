@@ -39,6 +39,7 @@ class ReportPortalPlugin:
             )
         try:
             context.config.userdata['rp_endpoint']
+            context.config.userdata['rp_launch']
             context.config.userdata['rp_project']
             context.config.userdata['rp_token']
         except KeyError:
@@ -58,12 +59,12 @@ class ReportPortalPlugin:
         """
         self._rp = ReportPortalServiceAsync(
             endpoint=context.config.userdata.get('rp_endpoint', None),
-            project=context.config.userdata.get('rp_project', None),
+            project=context.config.userdata.get('rp_area', None),
             token=context.config.userdata.get('rp_token', None),
             error_handler=self.error,
         )
         self._rp.start_launch(
-            name='qa_personal',
+            name=context.config.userdata.get('rp_launch', None),
             start_time=self.timestamp(),
         )
 

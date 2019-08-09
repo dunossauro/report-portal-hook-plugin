@@ -10,8 +10,9 @@ pip install git+https://github.com/dunossauro/report-portal-hook-plugin.git
 #### behave.ini file
 ```
 [behave.userdata]
-rp_endpoint = <report portal url>
 rp_project  = <report portal project>
+rp_endpoint = <report portal url>
+rp_launch   = <report portal project>
 rp_token    = <report portal api token>
 ```
 
