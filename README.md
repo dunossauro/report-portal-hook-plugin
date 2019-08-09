@@ -23,7 +23,7 @@ Simple example using only `all` hooks. But should be used on all hooks
 
 ```python
 from hook_plug import environment_hooks, register_hooks
-from report_portal import ReportPortalPlugin
+from hp_report_portal import ReportPortalPlugin
 
 register_hooks(ReportPortalPlugin())
 
