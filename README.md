@@ -1,6 +1,6 @@
 # hook plug plugin to report portal.
 
-hp_report_portal is a [hook_plug](https://github.com/dunossauro/hook_plug) plugin based to report [Behave](https://github.com/behave/behave) executions on [Report Portal](reportportal.io).
+hp_report_portal is a [hook_plug](https://github.com/dunossauro/hook_plug) plugin based to report [Behave](https://github.com/behave/behave) executions on [Report Portal](https://reportportal.io).
 
 ## installation
 ```
