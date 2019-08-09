@@ -1,8 +1,8 @@
 behave report portal hook plugin
 
-## instalation
+## installation
 ```
-pip install git+https://github.com/dunossauro/report-portal-hook-plugin.git
+pip install hp-report-portal
 ```
 
 ## Usage
