@@ -38,9 +38,9 @@ class ReportPortalPlugin:
                 'Please, check if context is a behave context'
             )
         try:
+            context.config.userdata['rp_project']
             context.config.userdata['rp_endpoint']
             context.config.userdata['rp_launch']
-            context.config.userdata['rp_project']
             context.config.userdata['rp_token']
         except KeyError:
             raise EnvironmentError(
@@ -59,7 +59,7 @@ class ReportPortalPlugin:
         """
         self._rp = ReportPortalServiceAsync(
             endpoint=context.config.userdata.get('rp_endpoint', None),
-            project=context.config.userdata.get('rp_area', None),
+            project=context.config.userdata.get('rp_project', None),
             token=context.config.userdata.get('rp_token', None),
             error_handler=self.error,
         )
