@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hp-report-portal"
-version = "0.0.1"
+version = "0.0.2"
 description = "behave report portal hook plugin"
 authors = ["dunossauro <mendesxeduardo@gmail.com>", "reebr <renan.gomes@live.com>"]
 license = "MIT"
